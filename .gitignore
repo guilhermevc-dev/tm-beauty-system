@@ -1,0 +1,14 @@
+# Ambiente virtual
+.venv/
+venv/
+
+# Configurações do PyCharm
+.idea/
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Banco de dados local (vamos usar isso mais pra frente)
+*.db
+instance/
