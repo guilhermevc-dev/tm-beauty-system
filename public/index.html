@@ -1,28 +1,33 @@
 <!doctype html>
 <html lang="pt-br">
-<head>
 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Tays Matias Beauty</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
 
     <main>
 
+        <!-- HERO -->
 
-        <section  class="hero">
+        <section class="hero">
 
             <div class="hero-content">
 
@@ -45,14 +50,18 @@
         </section>
 
 
+        <!-- SOBRE -->
+
         <section class="sobre">
 
             <div class="sobre-content">
 
-                <div class="sobre-foto reveal-left" >
+                <div class="sobre-foto reveal-left">
 
-                    <img src="{{ url_for('static', filename='img/tays-profissional.jpg') }}"
-                         alt="Tays Matias">
+                    <img
+                        src="static/img/tays-profissional.jpg"
+                        alt="Tays Matias">
+
                 </div>
 
                 <div class="sobre-texto reveal-right">
@@ -68,7 +77,7 @@
                     </p>
 
                     <p>
-                         Em 2017, essa paixão ganhou um novo significado quando uma amiga passou a me procurar para
+                        Em 2017, essa paixão ganhou um novo significado quando uma amiga passou a me procurar para
                         fazer as unhas. O que começou de forma simples foi crescendo aos poucos, mesmo em meio à rotina
                         de trabalho como bancária. Eu atendia quando e onde fosse possível, no horário de almoço,
                         depois do expediente e até mesmo na casa das clientes.
@@ -101,6 +110,8 @@
         </section>
 
 
+        <!-- SERVIÇOS -->
+
         <section id="servicos" class="servicos">
 
             <h2 class="reveal">
@@ -109,12 +120,17 @@
 
             <div class="servicos-container">
 
+
+                <!-- DESIGN PERSONALIZADO -->
+
                 <div class="servico-card reveal">
 
                     <div class="servico-foto">
 
-                        <img src="{{ url_for('static', filename='img/design-personalizado.jpg') }}"
-                             alt="Design Personalizado">
+                        <img
+                            src="static/img/design-personalizado.jpg"
+                            alt="Design Personalizado">
+
                     </div>
 
                     <h3>Design Personalizado de Sobrancelhas</h3>
@@ -124,20 +140,26 @@
                         com um design personalizado.
                     </p>
 
-                    <a href="#"
-                       class="botao-agendar"
-                       data-servico="Design Personalizado de Sobrancelhas">
+                    <a
+                        href="#"
+                        class="botao-agendar"
+                        data-servico="Design Personalizado de Sobrancelhas">
                         Agendar
                     </a>
 
                 </div>
 
+
+                <!-- DESIGN COM HENNA -->
+
                 <div class="servico-card reveal">
 
-                     <div class="servico-foto">
+                    <div class="servico-foto">
 
-                        <img src="{{ url_for('static', filename='img/design-henna.jpg') }}"
-                             alt="Design Henna">
+                        <img
+                            src="static/img/design-henna.jpg"
+                            alt="Design com Henna">
+
                     </div>
 
                     <h3>Design com Henna</h3>
@@ -146,20 +168,26 @@
                         Definição e preenchimento para sobrancelhas mais marcantes e harmoniosas.
                     </p>
 
-                    <a href="#"
-                       class="botao-agendar"
-                       data-servico="Design com Henna">
+                    <a
+                        href="#"
+                        class="botao-agendar"
+                        data-servico="Design com Henna">
                         Agendar
                     </a>
 
                 </div>
 
+
+                <!-- DESIGN COM TINTA -->
+
                 <div class="servico-card reveal">
 
-                     <div class="servico-foto">
+                    <div class="servico-foto">
 
-                        <img src="{{ url_for('static', filename='img/design-tinta.jpg') }}"
-                             alt="Design Tinta">
+                        <img
+                            src="static/img/design-tinta.jpg"
+                            alt="Design com Tinta">
+
                     </div>
 
                     <h3>Design com Tinta</h3>
@@ -168,20 +196,26 @@
                         Cor e definição com efeito natural, valorizando os fios e o formato das sobrancelhas.
                     </p>
 
-                    <a href="#"
-                       class="botao-agendar"
-                       data-servico="Design com Tinta">
+                    <a
+                        href="#"
+                        class="botao-agendar"
+                        data-servico="Design com Tinta">
                         Agendar
                     </a>
 
                 </div>
 
+
+                <!-- BROW LAMINATION -->
+
                 <div class="servico-card reveal">
 
-                     <div class="servico-foto">
+                    <div class="servico-foto">
 
-                        <img src="{{ url_for('static', filename='img/brow-lamination.jpg') }}"
-                             alt="Brow Lamination">
+                        <img
+                            src="static/img/brow-lamination.jpg"
+                            alt="Brow Lamination">
+
                     </div>
 
                     <h3>Brow Lamination</h3>
@@ -191,20 +225,26 @@
                         valorizando o seu olhar.
                     </p>
 
-                    <a href="#"
-                       class="botao-agendar"
-                       data-servico="Brow Lamination">
+                    <a
+                        href="#"
+                        class="botao-agendar"
+                        data-servico="Brow Lamination">
                         Agendar
                     </a>
 
                 </div>
 
+
+                <!-- LASH LIFTING -->
+
                 <div class="servico-card reveal">
 
-                     <div class="servico-foto">
+                    <div class="servico-foto">
 
-                        <img src="{{ url_for('static', filename='img/lash-lifting.jpg') }}"
-                             alt="Lash Lifting">
+                        <img
+                            src="static/img/lash-lifting.jpg"
+                            alt="Lash Lifting">
+
                     </div>
 
                     <h3>Lash Lifting</h3>
@@ -214,20 +254,26 @@
                         um olhar marcante e natural.
                     </p>
 
-                    <a href="#"
-                       class="botao-agendar"
-                       data-servico="Lash Lifting">
+                    <a
+                        href="#"
+                        class="botao-agendar"
+                        data-servico="Lash Lifting">
                         Agendar
                     </a>
 
                 </div>
 
+
+                <!-- UNHAS TRADICIONAIS -->
+
                 <div class="servico-card reveal">
 
-                     <div class="servico-foto">
+                    <div class="servico-foto">
 
-                        <img src="{{ url_for('static', filename='img/unhas-tradicionais.jpg') }}"
-                             alt="Unhas Tradicionais">
+                        <img
+                            src="static/img/unhas-tradicionais.jpg"
+                            alt="Unhas Tradicionais">
+
                     </div>
 
                     <h3>Unhas Tradicionais</h3>
@@ -237,20 +283,26 @@
                         delicado e bem cuidado.
                     </p>
 
-                    <a href="#"
-                       class="botao-agendar"
-                       data-servico="Unhas Tradicionais">
+                    <a
+                        href="#"
+                        class="botao-agendar"
+                        data-servico="Unhas Tradicionais">
                         Agendar
                     </a>
 
                 </div>
 
+
+                <!-- BANHO DE GEL -->
+
                 <div class="servico-card reveal">
 
-                     <div class="servico-foto">
+                    <div class="servico-foto">
 
-                        <img src="{{ url_for('static', filename='img/banho-gel.jpg') }}"
-                             alt="Banho de Gel">
+                        <img
+                            src="static/img/banho-gel.jpg"
+                            alt="Banho de Gel">
+
                     </div>
 
                     <h3>Banho de Gel</h3>
@@ -260,20 +312,26 @@
                         para proporcionar mais resistência e um acabamento impecável.
                     </p>
 
-                    <a href="#"
-                       class="botao-agendar"
-                       data-servico="Banho de Gel">
+                    <a
+                        href="#"
+                        class="botao-agendar"
+                        data-servico="Banho de Gel">
                         Agendar
                     </a>
 
                 </div>
 
+
+                <!-- BLINDAGEM -->
+
                 <div class="servico-card reveal">
 
-                     <div class="servico-foto">
+                    <div class="servico-foto">
 
-                        <img src="{{ url_for('static', filename='img/blindagem.jpg') }}"
-                             alt="Blindagem">
+                        <img
+                            src="static/img/blindagem.jpg"
+                            alt="Blindagem">
+
                     </div>
 
                     <h3>Blindagem</h3>
@@ -283,20 +341,26 @@
                         ajudando a manter o esmalte bonito por mais tempo.
                     </p>
 
-                    <a href="#"
-                       class="botao-agendar"
-                       data-servico="Blindagem">
+                    <a
+                        href="#"
+                        class="botao-agendar"
+                        data-servico="Blindagem">
                         Agendar
                     </a>
 
                 </div>
 
+
+                <!-- EPILAÇÃO -->
+
                 <div class="servico-card reveal">
 
-                     <div class="servico-foto">
+                    <div class="servico-foto">
 
-                        <img src="{{ url_for('static', filename='img/depilacao.jpg') }}"
-                             alt="Depilação">
+                        <img
+                            src="static/img/depilacao.jpg"
+                            alt="Epilação">
+
                     </div>
 
                     <h3>(D) Epilação</h3>
@@ -306,20 +370,26 @@
                         proporcionando uma pele mais lisinha, macia e bem cuidada.
                     </p>
 
-                    <a href="#"
-                       class="botao-agendar"
-                       data-servico="(D) epilação">
+                    <a
+                        href="#"
+                        class="botao-agendar"
+                        data-servico="(D) Epilação">
                         Agendar
                     </a>
 
                 </div>
 
+
+                <!-- BANHO DE LUA -->
+
                 <div class="servico-card reveal">
 
-                     <div class="servico-foto">
+                    <div class="servico-foto">
 
-                        <img src="{{ url_for('static', filename='img/banho-lua.jpg') }}"
-                             alt="Banho de Lua">
+                        <img
+                            src="static/img/banho-lua.jpg"
+                            alt="Banho de Lua">
+
                     </div>
 
                     <h3>Banho de Lua</h3>
@@ -329,9 +399,10 @@
                         iluminada e com um toque suave.
                     </p>
 
-                    <a href="#"
-                       class="botao-agendar"
-                       data-servico="Banho de Lua">
+                    <a
+                        href="#"
+                        class="botao-agendar"
+                        data-servico="Banho de Lua">
                         Agendar
                     </a>
 
@@ -340,6 +411,9 @@
             </div>
 
         </section>
+
+
+        <!-- CONTATO -->
 
         <section id="contato" class="contato">
 
@@ -359,15 +433,19 @@
                         id="contato-whatsapp">
                         <i class="fa-brands fa-whatsapp"></i>
 
-                         WhatsApp
+                        WhatsApp
+
                     </a>
 
-                    <a href="https://www.instagram.com/taysmatias.beauty/"
-                       target="_blank"
-                       class="contato-item">
+                    <a
+                        href="https://www.instagram.com/taysmatias.beauty/"
+                        target="_blank"
+                        class="contato-item">
+
                         <i class="fa-brands fa-instagram"></i>
 
                         Instagram
+
                     </a>
 
                 </div>
@@ -378,7 +456,9 @@
 
     </main>
 
-<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+    <script src="static/js/script.js"></script>
 
 </body>
+
 </html>
