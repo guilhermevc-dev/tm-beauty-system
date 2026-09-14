@@ -1,17 +1,418 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tays Matias Beauty</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
 </head>
+
 <body>
-<header>
-    <h1>Tays Matias Beauty</h1>
-    <p>Bem vindo(a) ao nosso Sistema de Agendamento!</p>
-    <button>Agendar Horário</button>
-</header>
+
+    <main>
+
+
+        <section  class="hero">
+
+            <div class="hero-content">
+
+                <p class="welcome">
+                    Seja bem-vinda(o)
+                    ao seu momento.
+                </p>
+
+                <h1>
+                    TAYS MATIAS
+                    <span>BEAUTY</span>
+                </h1>
+
+                <p class="subtitle">
+                    Acolhimento, cuidado e paixão em cada detalhe.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="sobre">
+
+            <div class="sobre-content">
+
+                <div class="sobre-foto reveal-left" >
+
+                    <img src="{{ url_for('static', filename='img/tays-profissional.jpg') }}"
+                         alt="Tays Matias">
+                </div>
+
+                <div class="sobre-texto reveal-right">
+
+                    <h2>
+                        Uma história construída com paixão
+                    </h2>
+
+                    <p>
+                        Minha história com a beleza começou aos 12 anos, quando uma tia precisou se afastar da
+                        profissão e decidiu me ensinar. Foi assim, de porta em porta, em uma cidade pequena, que
+                        descobri uma paixão que continuaria crescendo comigo.
+                    </p>
+
+                    <p>
+                         Em 2017, essa paixão ganhou um novo significado quando uma amiga passou a me procurar para
+                        fazer as unhas. O que começou de forma simples foi crescendo aos poucos, mesmo em meio à rotina
+                        de trabalho como bancária. Eu atendia quando e onde fosse possível, no horário de almoço,
+                        depois do expediente e até mesmo na casa das clientes.
+                    </p>
+
+                    <p>
+                        Quando a procura aumentou, percebi que era hora de dar um novo passo. Um cômodo da minha própria
+                        casa se transformou no meu primeiro espaço de atendimento. Desde então, nunca mais parei de
+                        atender.
+                    </p>
+
+                    <p>
+                        Ao longo dessa caminhada, novos conhecimentos foram se transformando em novas formas de cuidar.
+                        O design de sobrancelhas, a henna, a depilação com cera e o banho de lua com esfoliação fizeram
+                        parte dessa descoberta. Com o tempo, também me aprofundei nas técnicas de unhas em gel e fibra e
+                        trouxe para esse caminho o Brow Lamination e o Lash Lifting.
+                        Aos poucos, fui encontrando novas formas de cuidar e realçar a beleza de cada mulher.
+                    </p>
+
+                    <p>
+                        Foi assim que nasceu a <strong>Tays Matias Beauty</strong>, de uma paixão que começou cedo e
+                        que, com dedicação, aprendizado e muito carinho, se transformou em um espaço para realçar a
+                        beleza de cada mulher de forma única.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="servicos" class="servicos">
+
+            <h2 class="reveal">
+                Conheça nossos serviços
+            </h2>
+
+            <div class="servicos-container">
+
+                <div class="servico-card reveal">
+
+                    <div class="servico-foto">
+
+                        <img src="{{ url_for('static', filename='img/design-personalizado.jpg') }}"
+                             alt="Design Personalizado">
+                    </div>
+
+                    <h3>Design Personalizado de Sobrancelhas</h3>
+
+                    <p>
+                        Realce a beleza natural das suas sobrancelhas
+                        com um design personalizado.
+                    </p>
+
+                    <a href="#"
+                       class="botao-agendar"
+                       data-servico="Design Personalizado de Sobrancelhas">
+                        Agendar
+                    </a>
+
+                </div>
+
+                <div class="servico-card reveal">
+
+                     <div class="servico-foto">
+
+                        <img src="{{ url_for('static', filename='img/design-henna.jpg') }}"
+                             alt="Design Henna">
+                    </div>
+
+                    <h3>Design com Henna</h3>
+
+                    <p>
+                        Definição e preenchimento para sobrancelhas mais marcantes e harmoniosas.
+                    </p>
+
+                    <a href="#"
+                       class="botao-agendar"
+                       data-servico="Design com Henna">
+                        Agendar
+                    </a>
+
+                </div>
+
+                <div class="servico-card reveal">
+
+                     <div class="servico-foto">
+
+                        <img src="{{ url_for('static', filename='img/design-tinta.jpg') }}"
+                             alt="Design Tinta">
+                    </div>
+
+                    <h3>Design com Tinta</h3>
+
+                    <p>
+                        Cor e definição com efeito natural, valorizando os fios e o formato das sobrancelhas.
+                    </p>
+
+                    <a href="#"
+                       class="botao-agendar"
+                       data-servico="Design com Tinta">
+                        Agendar
+                    </a>
+
+                </div>
+
+                <div class="servico-card reveal">
+
+                     <div class="servico-foto">
+
+                        <img src="{{ url_for('static', filename='img/brow-lamination.jpg') }}"
+                             alt="Brow Lamination">
+                    </div>
+
+                    <h3>Brow Lamination</h3>
+
+                    <p>
+                        Sobrancelhas alinhadas e definidas,
+                        valorizando o seu olhar.
+                    </p>
+
+                    <a href="#"
+                       class="botao-agendar"
+                       data-servico="Brow Lamination">
+                        Agendar
+                    </a>
+
+                </div>
+
+                <div class="servico-card reveal">
+
+                     <div class="servico-foto">
+
+                        <img src="{{ url_for('static', filename='img/lash-lifting.jpg') }}"
+                             alt="Lash Lifting">
+                    </div>
+
+                    <h3>Lash Lifting</h3>
+
+                    <p>
+                        Curvatura e realce dos cílios para
+                        um olhar marcante e natural.
+                    </p>
+
+                    <a href="#"
+                       class="botao-agendar"
+                       data-servico="Lash Lifting">
+                        Agendar
+                    </a>
+
+                </div>
+
+                <div class="servico-card reveal">
+
+                     <div class="servico-foto">
+
+                        <img src="{{ url_for('static', filename='img/unhas-tradicionais.jpg') }}"
+                             alt="Unhas Tradicionais">
+                    </div>
+
+                    <h3>Unhas Tradicionais</h3>
+
+                    <p>
+                        Cuidados com as unhas e esmaltação para um acabamento bonito,
+                        delicado e bem cuidado.
+                    </p>
+
+                    <a href="#"
+                       class="botao-agendar"
+                       data-servico="Unhas Tradicionais">
+                        Agendar
+                    </a>
+
+                </div>
+
+                <div class="servico-card reveal">
+
+                     <div class="servico-foto">
+
+                        <img src="{{ url_for('static', filename='img/banho-gel.jpg') }}"
+                             alt="Banho de Gel">
+                    </div>
+
+                    <h3>Banho de Gel</h3>
+
+                    <p>
+                        Uma camada de gel sobre as unhas naturais
+                        para proporcionar mais resistência e um acabamento impecável.
+                    </p>
+
+                    <a href="#"
+                       class="botao-agendar"
+                       data-servico="Banho de Gel">
+                        Agendar
+                    </a>
+
+                </div>
+
+                <div class="servico-card reveal">
+
+                     <div class="servico-foto">
+
+                        <img src="{{ url_for('static', filename='img/blindagem.jpg') }}"
+                             alt="Blindagem">
+                    </div>
+
+                    <h3>Blindagem</h3>
+
+                    <p>
+                        Proteção e fortalecimento das unhas naturais,
+                        ajudando a manter o esmalte bonito por mais tempo.
+                    </p>
+
+                    <a href="#"
+                       class="botao-agendar"
+                       data-servico="Blindagem">
+                        Agendar
+                    </a>
+
+                </div>
+
+                <div class="servico-card reveal">
+
+                     <div class="servico-foto">
+
+                        <img src="{{ url_for('static', filename='img/depilacao.jpg') }}"
+                             alt="Depilação">
+                    </div>
+
+                    <h3>(D) Epilação</h3>
+
+                    <p>
+                        Remoção dos pelos de forma cuidadosa,
+                        proporcionando uma pele mais lisinha, macia e bem cuidada.
+                    </p>
+
+                    <a href="#"
+                       class="botao-agendar"
+                       data-servico="(D) epilação">
+                        Agendar
+                    </a>
+
+                </div>
+
+                <div class="servico-card reveal">
+
+                     <div class="servico-foto">
+
+                        <img src="{{ url_for('static', filename='img/banho-lua.jpg') }}"
+                             alt="Banho de Lua">
+                    </div>
+
+                    <h3>Banho de Lua</h3>
+
+                    <p>
+                        Um momento de cuidado para deixar a pele macia,
+                        iluminada e com um toque suave.
+                    </p>
+
+                    <a href="#"
+                       class="botao-agendar"
+                       data-servico="Banho de Lua">
+                        Agendar
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contato" class="contato">
+
+            <div class="contato-content reveal">
+
+                <h2>Nossos contatos</h2>
+
+                <p>
+                    Para agendamentos, dúvidas ou mais informações,
+                    entre em contato pelos canais abaixo.
+                </p>
+
+                <div class="contato-links">
+
+                    <a href="https://wa.me/5532999156165"
+                       target="_blank"
+                       class="contato-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                         WhatsApp
+                    </a>
+
+                    <a href="https://www.instagram.com/taysmatias.beauty/"
+                       target="_blank"
+                       class="contato-item">
+                        <i class="fa-brands fa-instagram"></i>
+                        Instagram
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+<script>
+
+        const elementosReveal = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if(entry.isIntersecting){
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.12
+        });
+
+        elementosReveal.forEach((elemento) => {
+            observer.observe(elemento);
+        });
+
+        const botoesAgendar = document.querySelectorAll('.botao-agendar');
+
+        botoesAgendar.forEach((botao) => {
+            botao.addEventListener('click', (event) => {
+                event.preventDefault();
+
+                const servico = botao.dataset.servico;
+                const numero = '5532999156165';
+
+                const mensagem = `Olá! Gostaria de agendar o serviço de ${servico}. Poderia me informar os horários disponíveis?`;
+
+                const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+
+                window.open(url, '_blank');
+            });
+        });
+
+    </script>
+
 </body>
 </html>
