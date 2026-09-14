@@ -344,7 +344,7 @@ body{
         min-height: 50vh;
         padding: 30px 20px;
     }
-    
+
     .hero h1{
         font-size: 48px;
         letter-spacing: 2px;
@@ -423,6 +423,12 @@ body{
     .reveal-left,
     .reveal-right{
         transform: translateY(30px);
+    }
+
+    .reveal,
+    .reveal-left,
+    .reveal-right{
+        transition-duration: 0.6s;
     }
 
     .reveal.active,

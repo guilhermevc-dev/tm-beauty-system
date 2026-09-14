@@ -425,6 +425,12 @@ body{
         transform: translateY(30px);
     }
 
+    .reveal,
+    .reveal-left,
+    .reveal-right{
+        transition-duration: 0.6s;
+    }
+
     .reveal.active,
     .reveal-left.active,
     .reveal-right.active{
