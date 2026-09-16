@@ -8,7 +8,7 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold: 0.12
+    threshold: 0.05
 });
 
 elementosReveal.forEach((elemento) => {
